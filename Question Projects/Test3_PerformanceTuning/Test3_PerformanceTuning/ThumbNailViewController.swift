@@ -11,7 +11,7 @@ import UIKit
 class ThumbNailViewController: UITableViewController {
 
     @IBOutlet var thumbNailTableView: UITableView!
-    let datasourceList: [String] = TestData.datasourceList
+    let decodedImages: [UIImage?] = TestData.datasourceList.map { ThumbNailViewController.base64Image(imageString: $0) }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,23 +37,13 @@ class ThumbNailViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ThumbNailCell
         cell.selectionStyle = .none
-        
-        DispatchQueue.global().async {
-            let image = self.base64Image(imageString: self.datasourceList[0])
-            DispatchQueue.main.async() {
-                cell.firstImageView.image = image
-            }
-        }
-        DispatchQueue.global().async {
-            let image = self.base64Image(imageString: self.datasourceList[1])
-            DispatchQueue.main.async() {
-                cell.secondImageView.image = image
-            }
-        }
+
+        cell.firstImageView.image = decodedImages[0]
+        cell.secondImageView.image = decodedImages[1]
         return cell
     }
     
-    func base64Image(imageString: String) -> UIImage?{
+    static func base64Image(imageString: String) -> UIImage?{
         if let data = Data(base64Encoded: imageString) {
             if let image = UIImage(data: data) {
                 return image
