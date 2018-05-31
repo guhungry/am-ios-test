@@ -12,7 +12,33 @@
 		2EAA625C209044FA00DB1507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA625A209044FA00DB1507 /* Main.storyboard */; };
 		2EAA625E209044FB00DB1507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA625D209044FB00DB1507 /* Assets.xcassets */; };
 		2EAA6261209044FB00DB1507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA625F209044FB00DB1507 /* LaunchScreen.storyboard */; };
+		CC9201AF20C06959001AF1A4 /* SimpleSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF9F02176B0389A29B52581 /* SimpleSwiftFramework.framework */; };
+		CC9201B020C06959001AF1A4 /* SimpleSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACF9F02176B0389A29B52581 /* SimpleSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACF9F0CC9CA22833F88C5984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF9F76464C960D3F8C8E95C /* SimpleSwiftFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACF9FEB3016CDC49643A0B4B;
+			remoteInfo = SimpleSwiftFrameworkTests;
+		};
+		ACF9F732723149369FFFB8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF9F76464C960D3F8C8E95C /* SimpleSwiftFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACF9FC7EC4ED34CB0AA30DC4;
+			remoteInfo = SimpleSwiftFramework;
+		};
+		CC9201B120C06959001AF1A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF9F76464C960D3F8C8E95C /* SimpleSwiftFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF9FB0CA165D3D9A572D2AB;
+			remoteInfo = SimpleSwiftFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2EAA626C2090465A00DB1507 /* Embed Frameworks */ = {
@@ -21,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CC9201B020C06959001AF1A4 /* SimpleSwiftFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +62,7 @@
 		2EAA625D209044FB00DB1507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EAA6260209044FB00DB1507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EAA6262209044FB00DB1507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF9F76464C960D3F8C8E95C /* SimpleSwiftFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimpleSwiftFramework.xcodeproj; path = SimpleSwiftFramework/SimpleSwiftFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9201AF20C06959001AF1A4 /* SimpleSwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +82,7 @@
 			children = (
 				2EAA6255209044FA00DB1507 /* Test4_UseYourFramework */,
 				2EAA6254209044FA00DB1507 /* Products */,
+				ACF9F76464C960D3F8C8E95C /* SimpleSwiftFramework.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +107,15 @@
 			path = Test4_UseYourFramework;
 			sourceTree = "<group>";
 		};
+		ACF9F0A7289649255353E71E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9F02176B0389A29B52581 /* SimpleSwiftFramework.framework */,
+				ACF9F2EA7A16157708E13BC1 /* SimpleSwiftFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,6 +131,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CC9201B220C06959001AF1A4 /* PBXTargetDependency */,
 			);
 			name = Test4_UseYourFramework;
 			productName = Test4_UseYourFramework;
@@ -124,12 +164,35 @@
 			mainGroup = 2EAA624A209044FA00DB1507;
 			productRefGroup = 2EAA6254209044FA00DB1507 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ACF9F0A7289649255353E71E /* Products */;
+					ProjectRef = ACF9F76464C960D3F8C8E95C /* SimpleSwiftFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2EAA6252209044FA00DB1507 /* Test4_UseYourFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ACF9F02176B0389A29B52581 /* SimpleSwiftFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SimpleSwiftFramework.framework;
+			remoteRef = ACF9F732723149369FFFB8FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ACF9F2EA7A16157708E13BC1 /* SimpleSwiftFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SimpleSwiftFrameworkTests.xctest;
+			remoteRef = ACF9F0CC9CA22833F88C5984 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2EAA6251209044FA00DB1507 /* Resources */ = {
@@ -155,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC9201B220C06959001AF1A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleSwiftFramework;
+			targetProxy = CC9201B120C06959001AF1A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2EAA625A209044FA00DB1507 /* Main.storyboard */ = {
@@ -311,6 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../SimpleSwiftFramework\"/**";
 			};
 			name = Debug;
 		};
@@ -335,6 +407,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../SimpleSwiftFramework\"/**";
 			};
 			name = Release;
 		};
