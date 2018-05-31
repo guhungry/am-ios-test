@@ -14,7 +14,23 @@
 		2EB58749EA56DB5D9BC63E41 /* Pods_Test2_ProblemSolving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FADBD12947DD7EEACA84 /* Pods_Test2_ProblemSolving.framework */; };
 		CC48B88720BFE2A100E1FE76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DC2A12090C77200328142 /* AppDelegate.swift */; };
 		CC92019D20BFF621001AF1A4 /* THSarabunNew.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3DC2B62090D51B00328142 /* THSarabunNew.ttf */; };
+		CC9201A420C062E5001AF1A4 /* libAgentMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF9F3F82C466DD8CD54373B /* libAgentMate.a */; };
+		CC9201AA20C06374001AF1A4 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACF9FC5E4AA38F83D2481BCB /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC9201AB20C06374001AF1A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC9201AA20C06374001AF1A4 /* MBProgressHUD.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0977064CD6C2DA69E9B88160 /* Pods-Test2_ProblemSolving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2_ProblemSolving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test2_ProblemSolving/Pods-Test2_ProblemSolving.debug.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +44,8 @@
 		2E3DC2AD2090C77400328142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E3DC2B62090D51B00328142 /* THSarabunNew.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THSarabunNew.ttf; sourceTree = "<group>"; };
 		94657816CBEEB4F8DA1A8A2E /* Pods-Test2_ProblemSolving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2_ProblemSolving.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test2_ProblemSolving/Pods-Test2_ProblemSolving.release.xcconfig"; sourceTree = "<group>"; };
+		ACF9F3F82C466DD8CD54373B /* libAgentMate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAgentMate.a; path = "/Users/beeyui/Git/iOS Test (Intermediate)/Question Projects/Test2_ProblemSolving/Test2_ProblemSolving/libAgentMate.a"; sourceTree = "<absolute>"; };
+		ACF9FC5E4AA38F83D2481BCB /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "/Users/beeyui/Git/iOS Test (Intermediate)/Question Projects/Test2_ProblemSolving/Test2_ProblemSolving/MBProgressHUD.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9201A420C062E5001AF1A4 /* libAgentMate.a in Frameworks */,
 				2EB58749EA56DB5D9BC63E41 /* Pods_Test2_ProblemSolving.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				17A9FADBD12947DD7EEACA84 /* Pods_Test2_ProblemSolving.framework */,
+				ACF9F3F82C466DD8CD54373B /* libAgentMate.a */,
+				ACF9FC5E4AA38F83D2481BCB /* MBProgressHUD.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +132,7 @@
 				2E3DC29B2090C77200328142 /* Frameworks */,
 				2E3DC29C2090C77200328142 /* Resources */,
 				80A563D313F4D4E848AE8517 /* [CP] Embed Pods Frameworks */,
+				CC9201AB20C06374001AF1A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,6 +385,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Test2_ProblemSolving",
+					"\"${PROJECT_DIR}/../Test2_ProblemSolving\"/**",
 				);
 				INFOPLIST_FILE = Test2_ProblemSolving/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -391,6 +414,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Test2_ProblemSolving",
+					"\"${PROJECT_DIR}/../Test2_ProblemSolving\"/**",
 				);
 				INFOPLIST_FILE = Test2_ProblemSolving/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
