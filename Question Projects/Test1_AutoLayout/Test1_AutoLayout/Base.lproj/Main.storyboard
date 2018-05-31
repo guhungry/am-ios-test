@@ -438,7 +438,7 @@
                                     <action selector="didPressWithSegmentControl:" destination="Mxt-pi-RVt" eventType="valueChanged" id="pmU-ee-3io"/>
                                 </connections>
                             </segmentedControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JD1-QW-3g3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JD1-QW-3g3">
                                 <rect key="frame" x="0.0" y="64" width="1112" height="710"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fQx-CD-rB8">
@@ -484,6 +484,9 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="fQx-CD-rB8" firstAttribute="trailing" secondItem="JD1-QW-3g3" secondAttribute="trailing" id="1OS-7o-ouv"/>
+                                    <constraint firstItem="fQx-CD-rB8" firstAttribute="leading" secondItem="JD1-QW-3g3" secondAttribute="leading" id="5fB-pg-ydI"/>
+                                    <constraint firstItem="fQx-CD-rB8" firstAttribute="width" secondItem="JD1-QW-3g3" secondAttribute="width" id="8Q7-yB-V5O"/>
                                     <constraint firstAttribute="bottom" secondItem="fQx-CD-rB8" secondAttribute="bottom" id="G6h-wU-HqP"/>
                                     <constraint firstItem="fQx-CD-rB8" firstAttribute="top" secondItem="JD1-QW-3g3" secondAttribute="top" id="XaJ-5H-AEr"/>
                                 </constraints>
@@ -493,13 +496,11 @@
                         <constraints>
                             <constraint firstItem="web-MK-hR1" firstAttribute="bottom" secondItem="mtz-hO-GCS" secondAttribute="bottom" id="KPO-wU-FQc"/>
                             <constraint firstItem="JD1-QW-3g3" firstAttribute="top" secondItem="mtz-hO-GCS" secondAttribute="top" id="Opy-xw-iZF"/>
-                            <constraint firstItem="fQx-CD-rB8" firstAttribute="trailing" secondItem="mtz-hO-GCS" secondAttribute="trailing" id="VRK-43-y7V"/>
-                            <constraint firstItem="fQx-CD-rB8" firstAttribute="leading" secondItem="mtz-hO-GCS" secondAttribute="leading" id="aE6-Wq-xWm"/>
+                            <constraint firstItem="JD1-QW-3g3" firstAttribute="leading" secondItem="mtz-hO-GCS" secondAttribute="leading" id="Q1A-ji-M56"/>
                             <constraint firstItem="web-MK-hR1" firstAttribute="trailing" secondItem="mtz-hO-GCS" secondAttribute="trailing" id="cG0-5q-JnG"/>
-                            <constraint firstItem="JD1-QW-3g3" firstAttribute="trailing" secondItem="mtz-hO-GCS" secondAttribute="trailing" id="ggW-Bs-Jgp"/>
                             <constraint firstItem="JD1-QW-3g3" firstAttribute="bottom" secondItem="web-MK-hR1" secondAttribute="top" id="i0E-dq-e2j"/>
                             <constraint firstItem="web-MK-hR1" firstAttribute="leading" secondItem="mtz-hO-GCS" secondAttribute="leading" id="jxP-s6-Ipy"/>
-                            <constraint firstItem="JD1-QW-3g3" firstAttribute="leading" secondItem="mtz-hO-GCS" secondAttribute="leading" id="oKX-eH-bsu"/>
+                            <constraint firstItem="JD1-QW-3g3" firstAttribute="trailing" secondItem="mtz-hO-GCS" secondAttribute="trailing" id="vpv-tS-Kfm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mtz-hO-GCS"/>
                     </view>
